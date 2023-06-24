@@ -1,6 +1,15 @@
-import coheteImg from '../../assets/images/cohete.png'
+import { useState } from "react";
+import coheteImg from "../../assets/images/cohete.png";
+import { useEffect } from "react";
 
 const Header = () => {
+  const [cohete, setCohete] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setCohete(true);
+    }, 1000);
+  }, []);
   return (
     <header className="header">
       <div className="text-section">
@@ -19,10 +28,14 @@ const Header = () => {
           como primer paso de la experiencia que te espera en nuestro sitio.
         </p>
         <button className="btn1">Realizar test</button>
-        <img src={coheteImg} alt="cohete ilustrativo" />
+        <img
+          src={coheteImg}
+          alt="cohete ilustrativo"
+          className={cohete ? "visible" : "hidden"}
+        />
       </div>
       <div className="decoration-section">
-        <div className='circle'></div>
+        <div className="circle"></div>
       </div>
     </header>
   );
