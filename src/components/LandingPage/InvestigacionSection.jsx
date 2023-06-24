@@ -5,8 +5,8 @@ import responsablesIcon from '../../assets/images/padres.png'
 const InvestigacionSection = () => {
   return (
     <section className="investigaciones-section">
-        <span>Nuestras Investigaciones</span>
-        <h2>¿Por qué es necesario que sus hijos/as sepan de ciberseguridad?</h2>
+        <span className='subtitle'>Nuestras Investigaciones</span>
+        <h2 className='title'>¿Por qué es necesario que sus hijos/as sepan de ciberseguridad?</h2>
         <div className="cards-container">
             <article className="investigacion-card">
                 <img src={ciberneticoIcon} alt="icon" />

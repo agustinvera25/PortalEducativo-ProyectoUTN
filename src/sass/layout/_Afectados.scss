@@ -1,0 +1,28 @@
+.afectados-section {
+  align-items: center;
+  .text-section {
+    height: fit-content;
+    .title {
+      text-align: start;
+      margin: 0;
+    }
+    .title,
+    p {
+      width: 50rem;
+    }
+  }
+  .decoration-section {
+    justify-content: end;
+    align-items: end;
+    .circle {
+      top: 0%;
+      left: 35%;
+    }
+    img {
+      width: 50rem;
+      height: 45rem;
+      margin-right: 4rem;
+      border-radius: 2rem;
+    }
+  }
+}

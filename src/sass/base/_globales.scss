@@ -63,3 +63,19 @@ a {
     font-size: 1rem;
   }
 }
+
+.title{
+  color: $secundario;
+  text-align: center;
+  font-size: 3rem;
+  font-family: $fuente_secundaria;
+  font-weight: 700;
+  width: 70rem;
+}
+
+.subtitle{
+  color: $principal;
+  font-family: $fuente_secundaria;
+  font-weight: 700;
+  font-size: 1.4rem;
+}

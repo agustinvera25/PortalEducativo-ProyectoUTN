@@ -2,10 +2,10 @@ import graficoEdades from '../../assets/images/graficoEdades.png'
 
 const LosAfectados = () => {
   return (
-    <section className="afectados-section">
+    <section className="header afectados-section">
       <div className="text-section">
-        <span>Los mas afectados</span>
-        <h2>Las edades mas expuestas según nuestra encuesta</h2>
+        <span className='subtitle'>Los mas afectados</span>
+        <h2 className='title'>Las edades mas expuestas según nuestra encuesta</h2>
         <p>
           Realizamos encuestas locales las cuales dejaron en evidencia que los
           rangos etarios mas afectados por nuestra problematica son de 8 a 12

@@ -8,20 +8,6 @@
     span,h2{
         margin: 0;
     }
-    span{
-        color: $principal;
-        font-family: $fuente_secundaria;
-        font-weight: 700;
-        font-size: 1.4rem;
-    }
-    h2{
-        color: $secundario;
-        text-align: center;
-        font-size: 3rem;
-        font-family: $fuente_secundaria;
-        font-weight: 700;
-        width: 70rem;
-    }
     .cards-container{
         display: flex;
         align-items: center;
