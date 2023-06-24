@@ -1,6 +1,7 @@
 import { useState } from "react";
 import coheteImg from "../../assets/images/cohete.png";
 import { useEffect } from "react";
+import DetrasDelProyecto from "../DetrasDelProyecto";
 
 const Header = () => {
   const [cohete, setCohete] = useState(false);
@@ -35,6 +36,7 @@ const Header = () => {
         />
       </div>
       <div className="decoration-section">
+        <DetrasDelProyecto />
         <div className="circle"></div>
       </div>
     </header>
