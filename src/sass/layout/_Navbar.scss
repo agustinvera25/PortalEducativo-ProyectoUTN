@@ -1,0 +1,31 @@
+.navbar {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  .navbar-items {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-family: $fuente_secundaria;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    a{
+        color: $negro;
+        transition: all .5s;
+        &:hover{
+            color: $principal;
+        }
+    }
+    .navbar-logo{
+        font-size: 2rem;
+        font-weight: 700;
+        span{
+            color: $principal;
+        }
+    }
+  }
+}
