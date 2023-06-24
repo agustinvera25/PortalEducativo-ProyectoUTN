@@ -35,6 +35,8 @@
     }
     .decoration-section{
         width: 50%;
+        display: inline-flex;
+        justify-content: center;
         .circle{
             background-color: $principal;
             width: 130rem;
