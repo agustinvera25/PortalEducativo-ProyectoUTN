@@ -1,4 +1,5 @@
 import Header from "../components/LandingPage/Header"
+import InvestigacionSection from "../components/LandingPage/InvestigacionSection"
 import Navbar from "../components/Navbar"
 
 function LandingPage(){
@@ -6,6 +7,7 @@ function LandingPage(){
         <>
             <Navbar/>
             <Header/>
+            <InvestigacionSection/>
         </>
     )
 }
