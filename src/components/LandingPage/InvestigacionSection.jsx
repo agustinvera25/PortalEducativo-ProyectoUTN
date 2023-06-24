@@ -20,7 +20,7 @@ const InvestigacionSection = () => {
             </article>
             <article className="investigacion-card">
                 <img src={responsablesIcon} alt="icon" />
-                <h4>El responsable por el/la niño/a</h4>
+                <h4>El responsable del niño o niña</h4>
                 <p>Sabemos lo dificil que puede ser para un padre, madre o tutor estar pendiente todo el tiempo de lo que el/la niño/a consume en internet. Por eso consideramos que es necesario que ellos sepan y tomen dimensión de los peligros a los que estan expuestos.</p>
             </article>
         </div>
