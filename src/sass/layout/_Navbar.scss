@@ -20,12 +20,13 @@
             color: $principal;
         }
     }
-    .navbar-logo{
-        font-size: 2rem;
-        font-weight: 700;
-        span{
-            color: $principal;
-        }
-    }
+  }
+}
+
+.navbar-logo{
+  font-size: 2rem;
+  font-weight: 700;
+  span{
+      color: $principal;
   }
 }

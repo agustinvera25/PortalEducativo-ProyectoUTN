@@ -1,0 +1,40 @@
+.detras-del-proyecto {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 2rem;
+  background-color: $terciario;
+  width: fit-content;
+  height: fit-content;
+  padding: 3rem;
+  border-radius: 1rem;
+  h2 {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0;
+    color: $secundario;
+  }
+  .contenedor-alumnos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    .alumno {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      img {
+        width: 4rem;
+      }
+      span {
+        font-family: $fuente_secundaria;
+        font-weight: 700;
+        margin: 0;
+        color: $secundario;
+      }
+    }
+  }
+}

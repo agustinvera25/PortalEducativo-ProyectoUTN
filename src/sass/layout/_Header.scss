@@ -35,6 +35,8 @@
     }
     .decoration-section{
         width: 50%;
+        display: inline-flex;
+        justify-content: center;
         .circle{
             background-color: $principal;
             width: 130rem;
@@ -43,6 +45,7 @@
             position: absolute;
             top: 20%;
             left: 40%;
+            z-index: -10;
         }
     }
 }
