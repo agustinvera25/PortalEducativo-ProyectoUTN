@@ -1,10 +1,11 @@
 import checkIcon from "../../assets/icons/check.png";
+import grafico from "../../assets/images/graficoDispositivos.png";
 
 const Dispositivos = () => {
   return (
     <section className="header dispositivos-section">
       <div className="decoration-section">
-        <img src="" alt="graficos dispositivos" />
+        <img src={grafico} alt="graficos dispositivos" />
       </div>
       <div className="text-section">
         <span className="subtitle">Dispositivos de conexión habituales</span>
