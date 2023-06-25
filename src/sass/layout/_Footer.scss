@@ -1,0 +1,37 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    p, a{
+        font-family: $fuente_secundaria;
+        font-size: 1.2rem;
+    }
+    .footer-info{
+        display: grid;
+        gap: 2rem;
+        width: 40rem;
+    }
+    .footer-nav{
+        display: flex;
+        gap: 2rem;
+        div{
+            display: grid;
+            height: max-content;
+            align-content: flex-start;
+            h3{
+                font-size: 1.6rem;
+            }
+        }
+        .icons-container{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+        a:hover{
+            color: $principal;
+            transition: .5s ease;
+        }
+    }
+}
