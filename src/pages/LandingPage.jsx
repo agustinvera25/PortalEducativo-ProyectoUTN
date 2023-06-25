@@ -2,6 +2,7 @@ import Dispositivos from "../components/LandingPage/Dispositivos"
 import Header from "../components/LandingPage/Header"
 import InvestigacionSection from "../components/LandingPage/InvestigacionSection"
 import LosAfectados from "../components/LandingPage/LosAfectados"
+import OtrosResultados from "../components/LandingPage/OtrosResultados"
 import Navbar from "../components/Navbar"
 
 function LandingPage(){
@@ -12,6 +13,7 @@ function LandingPage(){
             <InvestigacionSection/>
             <LosAfectados/>
             <Dispositivos/>
+            <OtrosResultados/>
         </>
     )
 }
