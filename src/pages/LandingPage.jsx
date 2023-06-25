@@ -1,3 +1,4 @@
+import Footer from "../components/Footer"
 import Dispositivos from "../components/LandingPage/Dispositivos"
 import Header from "../components/LandingPage/Header"
 import InvestigacionSection from "../components/LandingPage/InvestigacionSection"
@@ -14,6 +15,7 @@ function LandingPage(){
             <LosAfectados/>
             <Dispositivos/>
             <OtrosResultados/>
+            <Footer/>
         </>
     )
 }
