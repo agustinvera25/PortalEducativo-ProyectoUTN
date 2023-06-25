@@ -1,3 +1,4 @@
+import Dispositivos from "../components/LandingPage/Dispositivos"
 import Header from "../components/LandingPage/Header"
 import InvestigacionSection from "../components/LandingPage/InvestigacionSection"
 import LosAfectados from "../components/LandingPage/LosAfectados"
@@ -10,6 +11,7 @@ function LandingPage(){
             <Header/>
             <InvestigacionSection/>
             <LosAfectados/>
+            <Dispositivos/>
         </>
     )
 }
