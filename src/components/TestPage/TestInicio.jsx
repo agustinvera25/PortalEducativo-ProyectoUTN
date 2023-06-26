@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { TestContext } from "../../contexts/TestContext";
 
-const Test = () => {
+const TestInicio = () => {
     const [visible, setVisible] = useState(false)
+
+    const {nextEtapa} = useContext(TestContext)
 
     useEffect(()=> setVisible(true), [])
   return (
@@ -15,10 +18,10 @@ const Test = () => {
           base a lo respondido y te daremos un veredicto sobre lo peligrosas o
           seguras que son las prácticas de tu hijo al navegar por Internet.
         </p>
-        <button className="btn1">Empezar test</button>
+        <button className="btn1" onClick={nextEtapa}>Empezar test</button>
       </div>
     </section>
   );
 };
 
-export default Test;
+export default TestInicio;
