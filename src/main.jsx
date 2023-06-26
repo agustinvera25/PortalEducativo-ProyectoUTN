@@ -6,11 +6,16 @@ import {
   RouterProvider
 } from 'react-router-dom'
 import LandingPage from './pages/LandingPage.jsx'
+import TestPage from './pages/TestPage.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <LandingPage/>
+  },
+  {
+    path: '/test',
+    element: <TestPage/>
   }
 ])
 
