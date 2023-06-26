@@ -4,10 +4,11 @@ import Navbar from "../components/Navbar";
 import TestInicio from "../components/TestPage/TestInicio";
 import { TestContext } from "../contexts/TestContext";
 import TestPreguntas from "../components/TestPage/TestPreguntas";
+import TestResultados from "../components/TestPage/TestResultados";
 
 const TestPage = () => {
   const { testEtapa } = useContext(TestContext);
-  
+
   return (
       <>
         <Navbar />
@@ -16,7 +17,7 @@ const TestPage = () => {
         ) : testEtapa === 1 ? (
           <TestPreguntas />
         ) : testEtapa === 2 ? (
-          <TestInicio />
+          <TestResultados />
         ) : (
           <TestInicio />
         )}
