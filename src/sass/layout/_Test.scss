@@ -1,0 +1,46 @@
+.test-section{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .inicio-test{
+        width: 50rem;
+        text-align: center;
+        display: grid;
+        gap: 1rem;
+        justify-items: center;
+        transition: all 1s ease;
+        transition-delay: 1s;
+        opacity: 0;
+        h2{
+            font-family: $fuente_principal;
+            font-size: 6rem;
+            font-weight: 700;
+            color: $secundario;
+            margin: 0;
+        }
+        p{
+            font-family: $fuente_secundaria;
+            font-size: 1.5rem;
+            color: $secundario;
+        }
+        &.visible{
+            opacity: 1;
+        }
+    }
+    .circle{
+        position: absolute;
+        top: -500%;
+        width: 120rem;
+        height: 120rem;
+        background-color: $terciario;
+        border-radius: 120rem;
+        z-index: -1;
+        transition: all 1s ease;
+        &.visible{
+            top: 0;
+        }
+    }
+}
