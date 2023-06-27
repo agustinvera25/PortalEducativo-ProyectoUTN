@@ -1,0 +1,25 @@
+.ciberacoso-section{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    .text-section{
+        width: 100%;
+        text-align: center;
+        h2{
+            font-size: 4.5rem;
+            color: $principal;
+            margin: 0;
+        }
+        span{
+            font-family: $fuente_secundaria;
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: $secundario;
+        }
+    }
+    img{
+        width: 30rem;
+        height: 30rem;
+    }
+}
