@@ -1,0 +1,71 @@
+.test-section{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-family: $fuente_principal;
+        font-size: 6rem;
+        font-weight: 700;
+        color: $secundario;
+        margin: 0;
+    }
+    p{
+        font-family: $fuente_secundaria;
+        font-size: 1.5rem;
+        color: $secundario;
+    }
+    .inicio-test{
+        width: 50rem;
+        text-align: center;
+        display: grid;
+        gap: 1rem;
+        justify-items: center;
+        transition: all 1s ease;
+        transition-delay: 1s;
+        opacity: 0;
+        &.visible{
+            opacity: 1;
+        }
+    }
+    .circle{
+        position: absolute;
+        top: -500%;
+        width: 120rem;
+        height: 120rem;
+        background-color: $terciario;
+        border-radius: 120rem;
+        z-index: -1;
+        transition: all 1s ease-in-out;
+        &.visible{
+            top: 0;
+        }
+    }
+    .test-preguntas{
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        width: fit-content;
+        height: fit-content;
+        padding: 4rem;
+        background-color: $terciario;
+        box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.25);
+        transform: scale(0%);
+        transition: all 1s ease;
+        p{
+            width: 60rem;
+            text-align: center;
+        }
+        &.visible{
+            transform: scale(100%);
+        }
+        .btn-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
