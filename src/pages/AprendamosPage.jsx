@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import AprendamosHeader from '../components/AprendamosPage/AprendamosHeader'
 import CiberacosoIntro from '../components/AprendamosPage/CiberacosoIntro'
+import CiberacosoProblematica from '../components/AprendamosPage/CiberacosoProblematica'
 
 const AprendamosPage = () => {
 
@@ -10,6 +11,7 @@ const AprendamosPage = () => {
         <Navbar/>
         <AprendamosHeader/>
         <CiberacosoIntro/>
+        <CiberacosoProblematica/>
         <Footer/>
     </>
   )
