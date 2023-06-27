@@ -1,25 +1,35 @@
-import { useState, useEffect } from "react";
-import advertenciaIcon from '../../assets/icons/advertencia.png'
+import { useState, useEffect, useContext } from "react";
+import { resultadosTest } from "../../assets/resultadosTest";
+import { TestContext } from "../../contexts/TestContext";
 
 const TestResultados = () => {
   const [visible, setVisible] = useState(false);
+  const [result, setResult] = useState({ title: "", icon: "", text: "" });
 
-  useEffect(() => setVisible(true), []);
+  const { puntosTest } = useContext(TestContext);
+
+  console.log(puntosTest);
+
+  useEffect(() => {
+    setVisible(true);
+    if (puntosTest >= 0 && puntosTest <= 2) {
+      setResult(resultadosTest[0]);
+    } else if (puntosTest >= 3 && puntosTest <= 4) {
+      setResult(resultadosTest[1]);
+    } else {
+      setResult(resultadosTest[2]);
+    }
+  }, []);
   return (
     <section className="test-section">
       <div className={visible ? "test-preguntas visible" : "test-preguntas"}>
-        <h2>Resultado</h2>
-        <img src={advertenciaIcon} alt="resultado icon" />
-        <p>
-          Tus perfiles online te describen tan bien que has incluido tu
-          dirección postal y la escuela a la que vas. Eres una persona
-          extrovertida y has aceptado solicitudes de amistad de gente que no
-          conoces porque piensas que, al ser amigos de tus amigos, no pasa nada.
-          Te recomendamos que pases a la segunda etapa de nuestra experiencia
-          online para aprender sobre los peligros a los que te enfrentas y como
-          prevenirlos.
-        </p>
-        <button className="btn1">Aprendamos jugando</button>
+        <h2>{result.title}</h2>
+        <img src={result.icon} alt="resultado icon" />
+        <p>{result.text}</p>
+        <div className="btn-container">
+          <button className="btn1" onClick={()=> window.location.reload()}>Reintentar test</button>
+          <button className="btn1" onClick={()=> window.location.href = '/aprendamosjugando'}>Aprendamos jugando</button>
+        </div>
       </div>
     </section>
   );

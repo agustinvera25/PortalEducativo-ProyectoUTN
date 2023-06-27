@@ -47,14 +47,15 @@
         display: grid;
         justify-items: center;
         align-content: center;
-        width: 70rem;
-        height: 40rem;
+        width: fit-content;
+        height: fit-content;
+        padding: 4rem;
         background-color: $terciario;
         box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.25);
         transform: scale(0%);
         transition: all 1s ease;
         p{
-            width: 70%;
+            width: 60rem;
             text-align: center;
         }
         &.visible{

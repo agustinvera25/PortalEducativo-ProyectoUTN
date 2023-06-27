@@ -24,7 +24,7 @@ export const TestProvider = ({children}) =>{
         }
     }
     return(
-    <TestContext.Provider value={{testEtapa, nextEtapa, preguntaActual, nextQuestion, handleResponse}}>
+    <TestContext.Provider value={{testEtapa, nextEtapa, preguntaActual, nextQuestion, handleResponse,puntosTest}}>
         {children}
     </TestContext.Provider>
 
