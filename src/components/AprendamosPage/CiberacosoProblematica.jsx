@@ -5,7 +5,7 @@ import chicaTriste from '../../assets/ilustaciones/problematica.png'
 const CiberacosoProblematica = () => {
   return (
     <section className="problematica-section">
-        <div>
+        <div className='cards-container'>
             <h2 className="title">¿Cómo puede llegar a afectar?</h2>
             <div>
                 <article className="investigacion-card">

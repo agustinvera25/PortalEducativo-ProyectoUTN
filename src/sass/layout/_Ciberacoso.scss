@@ -1,25 +1,71 @@
-.ciberacoso-section{
+.ciberacoso-section {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  .text-section {
+    width: 100%;
+    text-align: center;
+    h2 {
+      font-size: 4.5rem;
+      color: $principal;
+      margin: 0;
+    }
+    span {
+      font-family: $fuente_secundaria;
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: $secundario;
+    }
+  }
+  img {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+.problematica-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 4rem;
+  .cards-container {
     display: grid;
-    align-items: center;
     justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    .text-section{
-        width: 100%;
+    gap: 2rem;
+    h2 {
+      margin: 0;
+    }
+    div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      .investigacion-card {
+        align-items: center;
         text-align: center;
-        h2{
-            font-size: 4.5rem;
-            color: $principal;
-            margin: 0;
+        .subtitle {
+          font-size: 1.6rem;
         }
-        span{
-            font-family: $fuente_secundaria;
-            font-weight: 800;
-            font-size: 1.3rem;
-            color: $secundario;
+        p {
+          font-family: $fuente_secundaria;
+          color: $secundario;
+          font-size: 1rem;
+          line-height: 16px;
+          letter-spacing: 0.42px;
         }
+        img {
+          width: 6rem;
+        }
+      }
     }
-    img{
-        width: 30rem;
-        height: 30rem;
-    }
+  }
+  .image-container{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: $fuente_principal;
+    font-size: 1.8rem;
+    color: $secundario;
+  }
 }
