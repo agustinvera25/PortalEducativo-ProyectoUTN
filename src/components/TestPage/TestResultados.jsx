@@ -17,6 +17,7 @@ const TestResultados = () => {
     } else {
       setResult(resultadosTest[2]);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <section className="test-section">

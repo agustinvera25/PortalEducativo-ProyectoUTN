@@ -48,4 +48,25 @@
             z-index: -10;
         }
     }
+    &.aprendamos-header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 4rem;
+        img{
+            width: 50rem;
+        }
+        .text-section{
+            height: fit-content;
+            width: fit-content;
+            padding: 2rem;
+            color: $secundario;
+            .title{
+                text-align: start;
+                font-size: 5rem;
+                margin: 0;
+                width: 55rem;
+            }
+        }
+    }
 }
