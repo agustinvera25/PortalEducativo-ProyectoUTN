@@ -5,7 +5,7 @@ import { preguntasTest } from "../../assets/preguntas";
 const TestPreguntas = () => {
   const [visible, setVisible] = useState(false);
 
-  const {preguntaActual, nextQuestion} = useContext(TestContext)
+  const {preguntaActual, nextQuestion, handleResponse} = useContext(TestContext)
 
   useEffect(() => setVisible(true), []);
   return (
@@ -17,9 +17,11 @@ const TestPreguntas = () => {
         </p>
         <div className="btn-container">
           <button className="btn1" onClick={()=>{
+            handleResponse(true)
             nextQuestion()
           }}>Si</button>
           <button className="btn1" onClick={()=>{
+            handleResponse(false)
             nextQuestion()
           }}>No</button>
         </div>
