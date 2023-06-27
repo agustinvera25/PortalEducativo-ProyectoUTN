@@ -8,8 +8,6 @@ const TestResultados = () => {
 
   const { puntosTest } = useContext(TestContext);
 
-  console.log(puntosTest);
-
   useEffect(() => {
     setVisible(true);
     if (puntosTest >= 0 && puntosTest <= 2) {
