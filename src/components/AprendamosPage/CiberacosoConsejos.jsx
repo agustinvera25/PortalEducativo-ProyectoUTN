@@ -26,7 +26,7 @@ const CiberacosoConsejos = () => {
                 </div>
             </div>
             <span className='subtitle'>Ahora que sabemos mucho sobre ciberacoso y ciberbulling</span>
-            <button className='btn1'>¡Vamos a jugar!</button>
+            <button className='btn1' onClick={()=> window.location.href = '/juegos'}>¡Vamos a jugar!</button>
         </section>
     )
 }
