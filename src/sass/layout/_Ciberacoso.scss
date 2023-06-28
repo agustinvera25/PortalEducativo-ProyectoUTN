@@ -128,3 +128,24 @@
     }
   }
 }
+
+.aprendamos-proximamente{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    h2{
+        color: $principal;
+        font-size: 4rem;
+        margin: 0;
+    }
+    div{
+        display: grid;
+        justify-items: center;
+        .subtitle{
+            color: $secundario;
+            font-weight: 900;
+            font-size: 2rem;
+        }
+    }
+}

@@ -5,6 +5,7 @@ import CiberacosoIntro from '../components/AprendamosPage/CiberacosoIntro'
 import CiberacosoProblematica from '../components/AprendamosPage/CiberacosoProblematica'
 import CiberacosoQueHacer from '../components/AprendamosPage/CiberacosoQueHacer'
 import CiberacosoConsejos from '../components/AprendamosPage/CiberacosoConsejos'
+import Proximamente from '../components/AprendamosPage/Proximamente'
 
 const AprendamosPage = () => {
 
@@ -16,6 +17,7 @@ const AprendamosPage = () => {
         <CiberacosoProblematica/>
         <CiberacosoQueHacer/>
         <CiberacosoConsejos/>
+        <Proximamente/>
         <Footer/>
     </>
   )
