@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import AprendamosHeader from '../components/AprendamosPage/AprendamosHeader'
 import CiberacosoIntro from '../components/AprendamosPage/CiberacosoIntro'
 import CiberacosoProblematica from '../components/AprendamosPage/CiberacosoProblematica'
+import CiberacosoQueHacer from '../components/AprendamosPage/CiberacosoQueHacer'
 
 const AprendamosPage = () => {
 
@@ -12,6 +13,7 @@ const AprendamosPage = () => {
         <AprendamosHeader/>
         <CiberacosoIntro/>
         <CiberacosoProblematica/>
+        <CiberacosoQueHacer/>
         <Footer/>
     </>
   )
