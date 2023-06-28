@@ -25,6 +25,8 @@ const CiberacosoConsejos = () => {
                     <p>Aprende sobre los ajustes de privacidad de tus aplicaciones favoritas para las redes sociales. Puedes decidir quién puede ver tu perfil, enviarte mensajes o comentar tus publicaciones, informar sobre comentarios, mensajes, fotografías y videos hirientes y bloquear completamente a alguien para que no pueda volver a ver tu perfil ni contactarte.</p>
                 </div>
             </div>
+            <span className='subtitle'>Ahora que sabemos mucho sobre ciberacoso y ciberbulling</span>
+            <button className='btn1'>¡Vamos a jugar!</button>
         </section>
     )
 }
