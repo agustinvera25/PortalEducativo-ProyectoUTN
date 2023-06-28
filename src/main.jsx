@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage.jsx";
 import TestPage from "./pages/TestPage.jsx";
 import { TestProvider } from "./contexts/TestContext.jsx";
 import AprendamosPage from "./pages/AprendamosPage.jsx";
+import JuegosPage from "./pages/JuegosPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,13 +21,18 @@ const router = createBrowserRouter([
     path: "/aprendamosjugando",
     element: <AprendamosPage />,
   },
+  {
+    path: "/juegos",
+    element: <JuegosPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <TestProvider>
-      <RouterProvider router={router} />
-      <App />
+      <RouterProvider router={router}>
+        <App />
+      </RouterProvider>
     </TestProvider>
   </React.StrictMode>
 );
