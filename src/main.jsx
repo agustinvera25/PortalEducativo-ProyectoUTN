@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./pages/LandingPage.jsx";
 import TestPage from "./pages/TestPage.jsx";
 import { TestProvider } from "./contexts/TestContext.jsx";
+import AprendamosPage from "./pages/AprendamosPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/test",
     element: <TestPage />,
+  },
+  {
+    path: "/aprendamosjugando",
+    element: <AprendamosPage />,
   },
 ]);
 

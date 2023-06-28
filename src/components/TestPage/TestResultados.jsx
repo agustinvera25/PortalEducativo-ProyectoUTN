@@ -8,8 +8,6 @@ const TestResultados = () => {
 
   const { puntosTest } = useContext(TestContext);
 
-  console.log(puntosTest);
-
   useEffect(() => {
     setVisible(true);
     if (puntosTest >= 0 && puntosTest <= 2) {
@@ -19,6 +17,7 @@ const TestResultados = () => {
     } else {
       setResult(resultadosTest[2]);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <section className="test-section">
