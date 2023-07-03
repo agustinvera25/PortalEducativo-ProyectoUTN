@@ -7,6 +7,8 @@ import TestPage from "./pages/TestPage.jsx";
 import { TestProvider } from "./contexts/TestContext.jsx";
 import AprendamosPage from "./pages/AprendamosPage.jsx";
 import JuegosPage from "./pages/JuegosPage.jsx";
+import CiberacosoRosco from "./components/JuegosPage/CiberacosoRosco.jsx";
+import CiberacosoTrivia from "./components/JuegosPage/CiberacosoTrivia.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
   {
     path: "/juegos",
     element: <JuegosPage />,
+  },
+  {
+    path: "/juego/ciberacoso/rosco",
+    element: <CiberacosoRosco />,
+  },
+  {
+    path: "/juego/ciberacoso/trivia",
+    element: <CiberacosoTrivia />,
   },
 ]);
 
