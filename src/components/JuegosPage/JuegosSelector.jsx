@@ -14,8 +14,8 @@ const JuegosSelector = () => {
             <h2 className="title">Ciberacoso y ciberbullying</h2>
           </div>
           <span className="subtitle">¡Vamos a jugar!</span>
-          <button className="btn1">Rosco de letras</button>
-          <button className="btn1">Trivia de preguntas</button>
+          <a className="btn1" href="/juego/ciberacoso/rosco">Rosco de letras</a>
+          <a className="btn1" href="/juego/ciberacoso/trivia">Trivia de preguntas</a>
         </article>
         <article className="investigacion-card dos">
           <div className="title-container">
