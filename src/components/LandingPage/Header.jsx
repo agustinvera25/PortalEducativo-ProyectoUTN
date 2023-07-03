@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import coheteImg from "../../assets/images/cohete.png";
-import { useEffect } from "react";
 import DetrasDelProyecto from "../DetrasDelProyecto";
 
 const Header = () => {
