@@ -80,3 +80,16 @@ export const triviaCiberacoso = [
         ]
       }
 ]
+
+export const respuestasTriviaCiberacoso = {
+  1: "c",
+  2: "b",
+  3: "c",
+  4: "b",
+  5: "c",
+  6: "b",
+  7: "b",
+  8: "b",
+  9: "c",
+  10: "b"
+}

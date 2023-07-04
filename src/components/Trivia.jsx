@@ -2,7 +2,7 @@ import { useState } from "react";
 import { triviaCiberacoso } from "../assets/triviaCiberacoso";
 
 const Trivia = () => {
-  const [trivia, setTrivia] = useState(triviaCiberacoso);
+  const [trivia] = useState(triviaCiberacoso);
   const [preguntaActual, setPreguntaActual] = useState(0);
   const [opcionesElegidas, setOpcionesElegidas] = useState({});
   const [respuestaActual, setRespuestaActual] = useState("");
