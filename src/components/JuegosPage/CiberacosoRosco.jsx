@@ -1,6 +1,14 @@
+import Navbar from '../Navbar'
+import Footer from '../Footer'
+import Rosco from '../Rosco'
+
 const CiberacosoRosco = () => {
   return (
-    <div>CiberacosoRosco</div>
+    <>
+      <Navbar/>
+      <Rosco/>
+      <Footer/>
+    </>
   )
 }
 
