@@ -126,3 +126,27 @@ a {
     }
   }
 }
+.modalTrivia{
+  background-color: $terciario;
+  padding: 4rem;
+  color: $blanco;
+  border-radius: 2rem;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  p, h2{
+    width: 100%;
+    margin: 0;
+  }
+  p{
+    font-size: 2rem;
+    font-family: $fuente_secundaria;
+    text-align: center;
+    color: $secundario;
+  }
+  .subtitle{
+    color: $principal;
+  }
+}

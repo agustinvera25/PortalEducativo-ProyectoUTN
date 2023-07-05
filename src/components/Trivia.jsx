@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { triviaCiberacoso, respuestasTriviaCiberacoso } from "../assets/triviaCiberacoso";
 import { Alert } from "@mui/material";
+import ModalTriviaResultado from "./JuegosPage/ModalTriviaResultado";
 
 const Trivia = () => {
   const [trivia] = useState(triviaCiberacoso);
@@ -10,7 +11,11 @@ const Trivia = () => {
   const [respuestasCorrectas, setRespuestasCorrectas] = useState(0)
 
   const [errorAlert, setErrorAlert] = useState(false)
-  const [responseAlert, setResponseAlert] = useState(false)
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleOpenModal = ()=> setIsOpen(true)
+  const handleCloseModal = ()=> setIsOpen(false)
 
   const agregarRespuesta = function () {
     if (respuestaActual.length > 0) {
@@ -37,18 +42,14 @@ const Trivia = () => {
       }
     }
     setRespuestasCorrectas(contadorRespuestas)
-    setResponseAlert(true)
+    handleOpenModal()
   };
 
   const handleOpcionSeleccionada = (opcion) => setRespuestaActual(opcion);
 
   return (
     <section className="trivia-section">
-      {responseAlert && (
-        <article className="responseModal">
-          {respuestasCorrectas}
-        </article>
-      )}
+      <ModalTriviaResultado isOpen={isOpen} handleClose={handleCloseModal} respuestas={respuestasCorrectas}/>
       <div className="pregunta-container">
         <div className="pregunta title">{trivia[preguntaActual].pregunta}</div>
         <div className="opciones">
