@@ -1,0 +1,35 @@
+.rosco-section{
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 2rem;
+    .letras-container{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        gap: 5rem;
+        .letra{
+            border: solid 1px $principal;
+            color: $principal;
+            padding: 2rem;
+            border-radius: 4rem;
+            text-align: center;
+            font-family: $fuente_secundaria;
+            font-size: 1.4rem;
+            &.seleccionada{
+                background-color: $principal;
+                color: $blanco;
+            }
+            &.correcto{
+                background-color: $success;
+                border: none;
+                color: $negro;
+            }
+            &.incorrecto{
+                background-color: $error;
+                border: none;
+                color: $negro;
+            }
+        }
+    }
+}

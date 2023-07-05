@@ -54,7 +54,7 @@ const Rosco = () => {
         {letras.map((letra) => (
           <div
             className={
-              letra === roscoActual[letraActual] && roscoActual[letraActual].letra
+              letra === roscoActual[letraActual].letra
                 ? "letra seleccionada"
                 : roscoResultado[letra] === "correcto"
                 ? "letra correcto"

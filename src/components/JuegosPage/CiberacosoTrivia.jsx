@@ -1,6 +1,14 @@
+import Navbar from '../Navbar'
+import Footer from '../Footer'
+import Trivia from '../Trivia'
+
 const CiberacosoTrivia = () => {
   return (
-    <div>CiberacosoTrivia</div>
+    <>
+      <Navbar/>
+      <Trivia/>
+      <Footer/>
+    </>
   )
 }
 
