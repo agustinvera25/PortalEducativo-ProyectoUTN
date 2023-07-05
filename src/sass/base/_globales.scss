@@ -11,7 +11,7 @@ html {
 
 body {
   background-color: $cuaternario;
-  padding-top: 10rem;
+  padding-top: 9rem;
 }
 
 #root {
@@ -61,6 +61,15 @@ a {
     color: $principal;
     font-weight: bold;
   }
+  &.disabled {
+    cursor: no-drop;
+    opacity: .5;
+    &:hover {
+      background: $principal;
+      color: $blanco;
+      font-weight: normal;
+    }
+  }
   @include tablet {
     width: 12rem;
     height: 3rem;
@@ -68,7 +77,7 @@ a {
   }
 }
 
-.title{
+.title {
   color: $secundario;
   text-align: center;
   font-size: 3rem;
@@ -77,42 +86,43 @@ a {
   width: 70rem;
 }
 
-.subtitle{
+.subtitle {
   color: $principal;
   font-family: $fuente_secundaria;
   font-weight: 700;
   font-size: 1.4rem;
 }
 
-.cards-container{
+.cards-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 2rem;
-  .investigacion-card{
-      display: flex;
-      flex-direction: column;
-      gap: .5rem;
-      width: 28rem;
-      height: auto;
-      border-radius: 0 0 1rem 1rem;
-      background-color: $blanco;
-      color: $secundario;
-      box-shadow: 0px 10px 40px 0px rgba(18, 18, 18, 0.10);
-      border-top: 2.5px solid $principal;
-      padding: 2rem;
-      img{
-          width: 4rem;
-      }
-      h4{
-          font-size: 1.6rem;
-      }
-      p{
-          font-family: $fuente_secundaria;
-          font-size: 1rem;
-      }
-      h4, p{
-          margin: 0;
-      }
+  .investigacion-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 28rem;
+    height: auto;
+    border-radius: 0 0 1rem 1rem;
+    background-color: $blanco;
+    color: $secundario;
+    box-shadow: 0px 10px 40px 0px rgba(18, 18, 18, 0.1);
+    border-top: 2.5px solid $principal;
+    padding: 2rem;
+    img {
+      width: 4rem;
+    }
+    h4 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-family: $fuente_secundaria;
+      font-size: 1rem;
+    }
+    h4,
+    p {
+      margin: 0;
+    }
   }
 }

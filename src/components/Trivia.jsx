@@ -1,11 +1,16 @@
 import { useState } from "react";
-import { triviaCiberacoso } from "../assets/triviaCiberacoso";
+import { triviaCiberacoso, respuestasTriviaCiberacoso } from "../assets/triviaCiberacoso";
+import { Alert } from "@mui/material";
 
 const Trivia = () => {
   const [trivia] = useState(triviaCiberacoso);
   const [preguntaActual, setPreguntaActual] = useState(0);
   const [opcionesElegidas, setOpcionesElegidas] = useState({});
   const [respuestaActual, setRespuestaActual] = useState("");
+  const [respuestasCorrectas, setRespuestasCorrectas] = useState(0)
+
+  const [errorAlert, setErrorAlert] = useState(false)
+  const [responseAlert, setResponseAlert] = useState(false)
 
   const agregarRespuesta = function () {
     if (respuestaActual.length > 0) {
@@ -16,21 +21,36 @@ const Trivia = () => {
           setPreguntaActual(preguntaActual + 1);
       }
     }else{
-        console.log('Seleccione una opcion')
+      setInterval(()=>{
+        setErrorAlert(false)
+      }, 4000)
+      setErrorAlert(true)
     }
   };
 
   const calcularRespuestas = function () {
     agregarRespuesta();
-    console.log("Fin de trivia");
+    let contadorRespuestas = 0
+    for (let i = 1; i <= Object.keys(respuestasTriviaCiberacoso).length; i++) {
+      if(respuestasTriviaCiberacoso[i] === opcionesElegidas[i]){
+        contadorRespuestas += 1
+      }
+    }
+    setRespuestasCorrectas(contadorRespuestas)
+    setResponseAlert(true)
   };
 
   const handleOpcionSeleccionada = (opcion) => setRespuestaActual(opcion);
 
   return (
     <section className="trivia-section">
+      {responseAlert && (
+        <article className="responseModal">
+          {respuestasCorrectas}
+        </article>
+      )}
       <div className="pregunta-container">
-        <div className="pregunta">{trivia[preguntaActual].pregunta}</div>
+        <div className="pregunta title">{trivia[preguntaActual].pregunta}</div>
         <div className="opciones">
           {trivia[preguntaActual].opciones.map((opcion) => (
             <h2
@@ -48,9 +68,10 @@ const Trivia = () => {
           ))}
         </div>
       </div>
+      {errorAlert && <Alert severity="error" style={{display:'flex', alignItems:'center', fontSize: '1.2rem'}}>Seleccione una opción antes de avanzar</Alert>}
       <div className="btn-container">
         <button
-          className="btn1"
+          className= {preguntaActual !== 0 ? 'btn1' : 'btn1 disabled'}
           onClick={() =>
             preguntaActual !== 0 && setPreguntaActual(preguntaActual - 1)
           }
