@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import coheteImg from "../../assets/images/cohete.png";
-import { useEffect } from "react";
 import DetrasDelProyecto from "../DetrasDelProyecto";
 
 const Header = () => {
@@ -14,7 +13,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="text-section">
-        <h1>¡Bienvenidos a NombreXD!</h1>
+        <h1>¡Bienvenidos a Ciberhéroes!</h1>
         <p>
           En el mundo en el que vivimos hoy es necesario saber como cuidarnos y
           como cuidar nuestro entorno con las nuevas herramientas como internet,
