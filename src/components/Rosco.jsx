@@ -11,7 +11,7 @@ const Rosco = () => {
 
   const [alertError, setAlertError] = useState(false);
 
-  const letras = Object.keys(roscoCiberacoso);
+  const letras = Object.values(roscoActual);
 
   const handleInput = function (e) {
     const { value } = e.target;
@@ -19,15 +19,21 @@ const Rosco = () => {
   };
 
   const incrementarLetra = function () {
-    if (letras.length > letraActual) {
+    if (letras.length > letraActual + 1) {
       setLetraActual(letraActual + 1);
     } else {
+      const letrasResultado = Object.keys(roscoResultado)
       setLetraActual(0);
+      for (let i = 0; i < letras.length; i++) {
+        if(letrasResultado.includes(letras[i].letra)){
+          setLetraActual(i + 1)
+        }
+      }
     }
     setInputValue("");
   };
 
-  console.log(roscoActual[letraActual]);
+  console.log(letras)
 
   const handleResultado = function (e) {
     e.preventDefault();
@@ -50,6 +56,10 @@ const Rosco = () => {
     incrementarLetra();
   };
 
+  // const calcularResultado = function(){
+
+  // }
+
   useEffect(() => {
     for (const letra in roscoCiberacoso) {
       const array = roscoCiberacoso[letra];
@@ -64,17 +74,17 @@ const Rosco = () => {
         {letras.map((letra) => (
           <div
             className={
-              letra === roscoActual[letraActual]?.letra
+              letra.letra === roscoActual[letraActual]?.letra
                 ? "letra seleccionada"
-                : roscoResultado[letra] === "correcto"
+                : roscoResultado[letra.letra] === "correcto"
                 ? "letra correcto"
-                : roscoResultado[letra] === "incorrecto"
+                : roscoResultado[letra.letra] === "incorrecto"
                 ? "letra incorrecto"
                 : "letra"
             }
-            key={letra}
+            key={letra.letra}
           >
-            {letra}
+            {letra.letra.replace('Contiene', '')}
           </div>
         ))}
       </div>
@@ -105,11 +115,11 @@ const Rosco = () => {
           </Alert>
         )}
         <div className="btn-container">
-          <button type="submit" className="btn1" onClick={handleResultado}>
-            Intentar palabra
-          </button>
           <button className="btn1" onClick={incrementarLetra}>
             Pasapalabra
+          </button>
+          <button type="submit" className="btn1" onClick={handleResultado}>
+            Intentar palabra
           </button>
         </div>
       </div>

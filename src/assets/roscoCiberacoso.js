@@ -33,13 +33,13 @@ export const roscoCiberacoso = {
         "Restringir el acceso a una persona en diferentes plataformas o medios. Se lleva a cabo cuando deseas evitar el contacto no deseado, protegerte de comportamientos acosadores.",
     },
     {
-      letra: "Contiene B",
+      letra: "ContieneB",
       palabra: "Ciberbullying",
       pista:
         "Cuando una persona utiliza internet, las redes sociales o los dispositivos electrónicos para molestar, intimidar o hacerle daño a alguien. Es como el bullying que ocurre en la escuela, pero en lugar de suceder cara a cara, ocurre en línea.",
     },
     {
-      letra: "Contiene B",
+      letra: "ContieneB",
       palabra: "Robar",
       pista:
         "Acción de obtener sin permiso por ejemplo tus datos personales o cuentas bancarias.",
@@ -163,7 +163,7 @@ export const roscoCiberacoso = {
         "Situaciones serias, importantes o de gran trascendencia. Por ejemplo las consecuencias emocionales del ciberbullying suelen ser…",
     },
     {
-      letra: "Contiene G",
+      letra: "ContieneG",
       palabra: "Peligro",
       pista:
         "Situaciones que representan un riesgo o amenaza para mi seguridad. Si chateo con un desconocido pongo mi vida en…  ",
@@ -215,7 +215,7 @@ export const roscoCiberacoso = {
       pista: "Datos, detalles o hechos que nos brindan conocimiento sobre algo. Nos ayuda a entender y tomar decisiones."
     },
     {
-      letra: "Contiene I",
+      letra: "ContieneI",
       palabra: "GIF",
       pista: "Formato de archivo de imagen animada ampliamente utilizada, sobre todo cuando enviamos mensajes."
     },
@@ -315,7 +315,7 @@ export const roscoCiberacoso = {
   ],
   "N": [
     {
-      "letra": "Contiene N",
+      "letra": "ContieneN",
       "palabra": "INSTRAGRAM",
       "pista": "Popular plataforma de redes sociales que permite a los usuarios compartir fotos, videos y publicaciones. Plataforma que se usa para compartir momentos de la vida diaria, intereses personales, contenido artístico, etc."
     },
@@ -325,7 +325,7 @@ export const roscoCiberacoso = {
       "pista": "Término utilizado para describir el almacenamiento y acceso en línea. Es un gran almacén de información en línea. Puedes acceder a tus archivos guardados allí desde cualquier dispositivo conectado a Internet."
     },
     {
-      "letra": "Contiene N",
+      "letra": "ContieneN",
       "palabra": "PIN",
       "pista": "Código numérico utilizado como medida de seguridad para autenticar o acceder a una cuenta o dispositivo."
     },
@@ -337,22 +337,22 @@ export const roscoCiberacoso = {
   ],
   "Ñ": [
     {
-      "letra": "Contiene Ñ",
+      "letra": "ContieneÑ",
       "palabra": "CONTRASEÑA",
       "pista": "Para ser robusta y segura, debe contener mayúsculas, minúsculas, números y símbolos."
     },
     {
-      "letra": "Contiene Ñ",
+      "letra": "ContieneÑ",
       "palabra": "DAÑOS",
       "pista": "Efectos negativos o perjuicios que pueden ocurrir como resultado de acciones maliciosas o accidentales."
     },
     {
-      "letra": "Contiene Ñ",
+      "letra": "ContieneÑ",
       "palabra": "EXTRAÑOS",
       "pista": "Personas que no conocemos y con las que no tenemos una relación previa. Es importante tener cuidado porque no conocemos sus intenciones."
     },
     {
-      "letra": "Contiene Ñ",
+      "letra": "ContieneÑ",
       "palabra": "NIÑOS",
       "pista": "Quienes están más expuestos a sufrir los riesgos de conectarse a Internet de forma no segura."
     }
@@ -369,12 +369,12 @@ export const roscoCiberacoso = {
       "pista": "Estar conectado a Internet y tener una conexión activa, que permite comunicarte con otras personas, acceder a información y mucho más."
     },
     {
-      "letra": "Contiene O",
+      "letra": "ContieneO",
       "palabra": "GROOMER",
       "pista": "Persona que acosa o realiza grooming."
     },
     {
-      "letra": "Contiene O",
+      "letra": "ContieneO",
       "palabra": "PORNOGRAFIA infantil",
       "pista": "Imágenes, video o cualquier material que muestra a niños realizando actividades sexuales de manera inapropiada. Contenido ilegal y prohibido."
     }
@@ -403,7 +403,7 @@ export const roscoCiberacoso = {
   ],
   "Q": [
     {
-      "letra": "Contiene Q",
+      "letra": "ContieneQ",
       "palabra": "BLOQUEAR",
       "pista": "Restringir el acceso a una persona en diferentes plataformas o medios. Se lleva a cabo cuando deseas evitar el contacto no deseado, protegerte de comportamientos acosadores."
     },
@@ -425,7 +425,7 @@ export const roscoCiberacoso = {
       "pista": "Personas que llevan a cabo actividades ilícitas. Pueden ser hackers maliciosos, ciberdelincuentes, estafadores, acosadores, etc. Son sujetos a la ley y pueden enfrentar consecuencias legales por sus acciones."
     },
     {
-      "letra": "Contiene R",
+      "letra": "ContieneR",
       "palabra": "PRIVACIDAD",
       "pista": "Se refiere al derecho y la capacidad para controlar que información personal compartimos, quién tiene acceso a ella y cómo se utiliza. Mantenerla nos ayuda a preservar nuestra identidad, seguridad y control sobre nuestra información."
     },
@@ -464,7 +464,7 @@ export const roscoCiberacoso = {
       "pista": "Popular aplicación de redes sociales que permite al usuario crear, compartir, y descubrir videos cortos."
     },
     {
-      "letra": "Contiene T",
+      "letra": "ContieneT",
       "palabra": "HASHTAG",
       "pista": "Símbolo utilizado en las redes sociales para etiquetar y categorizar contenido relacionado."
     },
@@ -481,7 +481,7 @@ export const roscoCiberacoso = {
   ],
   "U": [
     {
-      "letra": "Contiene U",
+      "letra": "ContieneU",
       "palabra": "CULPA",
       "pista": "Sentimiento que habitualmente tienen las víctimas de cualquier situación de acoso, creyendo que han hecho algo para merecerlo."
     },
@@ -491,12 +491,12 @@ export const roscoCiberacoso = {
       "pista": "Persona que utiliza la tecnología, interactúa con dispositivos, aplicaciones, programas o redes. Tiene una cuenta o perfil personalizado."
     },
     {
-      "letra": "Contiene U",
+      "letra": "ContieneU",
       "palabra": "PUBLICACIÓN",
       "pista": "Contenido o mensaje que se comparte o difunde en una plataforma, red social, blog o sitio web."
     },
     {
-      "letra": "Contiene U",
+      "letra": "ContieneU",
       "palabra": "SUPLANTAR",
       "pista": "Se da cuando los estafadores roban información personal para hacerse pasar por la persona afectada y realizar actividades ilegales en su nombre."
     }
@@ -518,7 +518,7 @@ export const roscoCiberacoso = {
       "pista": "Personas que han sufrido algún tipo de delito informático, robo de información, acoso en línea, estafas, suplantación de identidad o cualquier otro delito digital."
     },
     {
-      "letra": "Contiene V",
+      "letra": "ContieneV",
       "palabra": "LIVES",
       "pista": "Transmisión en vivo, emisión de contenido de tiempo real a través de internet."
     }
@@ -535,7 +535,7 @@ export const roscoCiberacoso = {
       "pista": "Colección de páginas interconectadas. Se accede a través de navegadores como Google Chrome, Mozilla, etc."
     },
     {
-      "letra": "Contiene W",
+      "letra": "ContieneW",
       "palabra": "MALWARE",
       "pista": "Programa malicioso que puede dañar tus dispositivos, robar información o permitir acceso no autorizado a tu sistema."
     },
@@ -548,28 +548,28 @@ export const roscoCiberacoso = {
   "X": [
     {
       "letra": "X",
-      "palabra": "Contiene EXTRAÑOS",
+      "palabra": "ContieneEXTRAÑOS",
       "pista": "Personas que no conocemos y con las que no tenemos una relación previa. Es importante tener cuidado porque no conocemos sus intenciones."
     },
     {
-      "letra": "Contiene X",
+      "letra": "ContieneX",
       "palabra": "EXTORCIONAR",
       "pista": "Chantajear a una persona. Delito en el cual una persona intenta obtener algo de valor de otra persona a través de amenazas y manipulación."
     },
     {
-      "letra": "Contiene X",
+      "letra": "ContieneX",
       "palabra": "CONEXION",
       "pista": "Enlace o comunicación entre dispositivos. Mecanismo fundamental para acceder a Internet. A veces falla."
     },
     {
-      "letra": "Contiene X",
+      "letra": "ContieneX",
       "palabra": "EXPOSICIÓN",
       "pista": "Se refiere a estar vulnerable a peligros, amenazas o situaciones de riesgo."
     }
   ],
   "Y": [
     {
-      "letra": "Contiene Y",
+      "letra": "ContieneY",
       "palabra": "AYUDA",
       "pista": "Acción que todos debemos llevar a cabo si vemos que otra persona sufre por acciones de personas acosadoras."
     },
@@ -584,14 +584,14 @@ export const roscoCiberacoso = {
       "pista": "Permite a los usuarios crear una cuenta de correo electrónico gratuita, enviar y recibir mensajes de correo electrónico."
     },
     {
-      "letra": "Contiene Y",
+      "letra": "ContieneY",
       "palabra": "APOYO",
       "pista": "Ofrecer respaldo, ayuda para enfrentar y superar situaciones difíciles proporcionando escucha, orientación y solidaridad."
     }
   ],
   "Z": [
     {
-      "letra": "Contiene Z",
+      "letra": "ContieneZ",
       "palabra": "VERGÜENZA",
       "pista": "Emoción incómoda que experimentamos cuando nos sentimos expuestos, humillados por algo que creemos haber dicho o hecho."
     },
@@ -601,7 +601,7 @@ export const roscoCiberacoso = {
       "pista": "Plataforma de videoconferencia que permite a las personas conectarse y comunicarse en línea a través de audio y video."
     },
     {
-      "letra": "Contiene Z",
+      "letra": "ContieneZ",
       "palabra": "AMENAZAS",
       "pista": "Peligros o riesgos que comprometen la seguridad propia, así como la seguridad de la información personal y sistemas informáticos."
     }
