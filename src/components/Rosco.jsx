@@ -2,6 +2,7 @@ import { useState } from "react";
 import { roscoCiberacoso } from "../assets/roscoCiberacoso";
 import { useEffect } from "react";
 import { Alert } from "@mui/material";
+import ModalRoscoResultados from "./JuegosPage/ModalRoscoResultados";
 
 const Rosco = () => {
   const [roscoActual, setRoscoActual] = useState([]);
@@ -11,6 +12,11 @@ const Rosco = () => {
 
   const [alertError, setAlertError] = useState(false);
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpenModal = () => setIsOpen(true);
+  const handleCloseModal = () => setIsOpen(false);
+
   const letras = Object.values(roscoActual);
 
   const handleInput = function (e) {
@@ -19,24 +25,35 @@ const Rosco = () => {
   };
 
   const incrementarLetra = function () {
-    if (letras.length > letraActual + 1) {
-      setLetraActual(letraActual + 1);
-    } else {
-      const letrasResultado = Object.keys(roscoResultado)
-      setLetraActual(0);
-      for (let i = 0; i < letras.length; i++) {
-        if(letrasResultado.includes(letras[i].letra)){
-          setLetraActual(i + 1)
+    if(!Object.keys(roscoResultado).includes(letras[letraActual + 1]?.letra)){
+      if(letras.length > (letraActual + 1)){
+        setLetraActual(letraActual + 1)
+      }else{
+        for (let i = 0; i < letras.length; i++) {
+          if(!Object.keys(roscoResultado).includes(letras[i]?.letra)){
+            console.log(letras[i]?.letra)
+            setLetraActual(i)
+            return
+          }
+        }
+      }
+    }else{
+      for (let i = letraActual+1; i < letras.length; i++) {
+        if(!Object.keys(roscoResultado).includes(letras[i]?.letra)){
+          setLetraActual(i)
+          return
         }
       }
     }
     setInputValue("");
   };
 
-  console.log(letras)
-
   const handleResultado = function (e) {
     e.preventDefault();
+    if (Object.keys(roscoResultado).length === letras.length - 1) {
+      handleOpenModal();
+      return;
+    }
     const respuesta = inputValue;
     const respuestaCorrecta = roscoActual[letraActual];
     if (respuesta === "") {
@@ -56,9 +73,16 @@ const Rosco = () => {
     incrementarLetra();
   };
 
-  // const calcularResultado = function(){
-
-  // }
+  const calcularResultado = function () {
+    let contadorRespuestasCorrectas = 0;
+    for (const respuesta in roscoResultado) {
+      if (roscoResultado[respuesta] === "correcto") {
+        contadorRespuestasCorrectas += 1;
+      }
+    }
+    console.log(contadorRespuestasCorrectas)
+    return contadorRespuestasCorrectas;
+  };
 
   useEffect(() => {
     for (const letra in roscoCiberacoso) {
@@ -69,7 +93,16 @@ const Rosco = () => {
   }, []);
   return (
     <section className="rosco-section">
-      <h2 className="title">{roscoActual[letraActual]?.letra + ")" + roscoActual[letraActual]?.pista}</h2>
+      <h2 className="title">
+        {roscoActual[letraActual]?.letra +
+          ")" +
+          roscoActual[letraActual]?.pista}
+      </h2>
+      <ModalRoscoResultados
+        resultados={calcularResultado()}
+        isOpen={isOpen}
+        handleClose={handleCloseModal}
+      />
       <div className="letras-container">
         {letras.map((letra) => (
           <div
@@ -84,7 +117,7 @@ const Rosco = () => {
             }
             key={letra.letra}
           >
-            {letra.letra.replace('Contiene', '')}
+            {letra.letra.replace("Contiene", "")}
           </div>
         ))}
       </div>
