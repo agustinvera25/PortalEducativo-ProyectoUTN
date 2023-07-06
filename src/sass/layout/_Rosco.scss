@@ -7,7 +7,7 @@
     .letras-container{
         display: grid;
         grid-template-columns: repeat(9, 1fr);
-        gap: 5rem;
+        gap: 3rem;
         .letra{
             border: solid 1px $principal;
             color: $principal;
@@ -31,5 +31,34 @@
                 color: $negro;
             }
         }
+    }
+    .btn-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+    .respuestas{
+        display: grid;
+        gap: 3rem;
+        justify-items: center;
+        .input{
+            display: grid;
+            justify-items: center;
+            label{
+                font-family: $fuente_principal;
+                font-size: 1.6rem;
+            }
+            input{
+                background-color: $cuaternario;
+                border: 1px solid $principal;
+                padding: 1rem;
+                border-radius: 1rem;
+                outline: none;
+            }
+        }
+    }
+    .title{
+        font-size: 1.5rem;
     }
 }
