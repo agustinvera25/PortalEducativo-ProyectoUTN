@@ -13,7 +13,10 @@ const ModalRoscoResultados = ({ resultados, isOpen, handleClose }) => {
       }}
     >
         <div className="modalTrivia">
-            {resultados}
+            <h2 className="title">¡Se terminó el juego!</h2>
+            <p className="subtitle">Ha obtenido un resultado del %{Math.round((resultados * 100)/27)}</p>
+            <p>blablabla</p>
+            <a className="btn1" href="/aprendamosjugando">Ir al apartado educativo</a>
         </div>
     </Modal>
   );

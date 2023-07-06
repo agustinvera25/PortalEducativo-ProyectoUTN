@@ -50,7 +50,7 @@ const Rosco = () => {
 
   const handleResultado = function (e) {
     e.preventDefault();
-    if (Object.keys(roscoResultado).length === letras.length) {
+    if (Object.keys(roscoResultado).length === letras.length - 1) {
       handleOpenModal();
       return;
     }
@@ -74,13 +74,13 @@ const Rosco = () => {
   };
 
   const calcularResultado = function () {
-    const respuestas = Object.values(roscoResultado);
     let contadorRespuestasCorrectas = 0;
-    for (const respuesta in respuestas) {
-      if (respuesta === "correcto") {
+    for (const respuesta in roscoResultado) {
+      if (roscoResultado[respuesta] === "correcto") {
         contadorRespuestasCorrectas += 1;
       }
     }
+    console.log(contadorRespuestasCorrectas)
     return contadorRespuestasCorrectas;
   };
 
