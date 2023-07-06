@@ -80,7 +80,6 @@ const Rosco = () => {
         contadorRespuestasCorrectas += 1;
       }
     }
-    console.log(contadorRespuestasCorrectas)
     return contadorRespuestasCorrectas;
   };
 
