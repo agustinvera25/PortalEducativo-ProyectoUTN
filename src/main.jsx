@@ -39,6 +39,18 @@ const router = createBrowserRouter([
     path: "/juego/ciberacoso/trivia",
     element: <CiberacosoTrivia />,
   },
+  {
+    path: "/terms",
+    element: <Proximamente />,
+  },
+  {
+    path: "/police",
+    element: <Proximamente />,
+  },
+  {
+    path: "/cookies",
+    element: <Proximamente />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
