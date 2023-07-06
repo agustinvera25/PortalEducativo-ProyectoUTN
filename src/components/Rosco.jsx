@@ -132,6 +132,7 @@ const Rosco = () => {
             name="respuesta"
             value={inputValue}
             onChange={handleInput}
+            autoFocus
           />
         </div>
         {alertError && (
