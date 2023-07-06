@@ -24,7 +24,7 @@ const InvestigacionSection = () => {
                 <p>Sabemos lo dificil que puede ser para un padre, madre o tutor estar pendiente todo el tiempo de lo que el/la niño/a consume en internet. Por eso consideramos que es necesario que ellos sepan y tomen dimensión de los peligros a los que estan expuestos.</p>
             </article>
         </div>
-        <button className="btn1">Realizar test</button>
+        <a className="btn1" href='/test'>Realizar test</a>
     </section>
   )
 }
