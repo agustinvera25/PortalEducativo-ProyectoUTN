@@ -6,7 +6,7 @@ const Navbar = () => {
             <li><a href="/">Inicio</a></li>
             <li><a href="/test">Test evaluativo</a></li>
             <li><a href="/aprendamosjugando">Aprendamos jugando</a></li>
-            <li><a href="/nosotros">Sobre nosotros</a></li>
+            <li><a href="/sobrenosotros">Sobre nosotros</a></li>
         </ul>
     </nav>
   )
