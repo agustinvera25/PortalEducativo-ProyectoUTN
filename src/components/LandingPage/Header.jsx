@@ -27,7 +27,7 @@ const Header = () => {
           Te invitamos a que junto a tu niño/a a cargo relices el siguiente test
           como primer paso de la experiencia que te espera en nuestro sitio.
         </p>
-        <button className="btn1">Realizar test</button>
+        <a className="btn1" href="/test">Realizar test</a>
         <img
           src={coheteImg}
           alt="cohete ilustrativo"

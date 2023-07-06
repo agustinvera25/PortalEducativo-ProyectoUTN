@@ -1,13 +1,16 @@
 import userDefault from '../assets/icons/usuario.png'
+import ceciFoto from '../assets/images/alumnos/Ceci.jpeg'
+import giuFoto from '../assets/images/alumnos/Giu.jpeg'
+import agusFoto from '../assets/images/alumnos/yo.jpg'
 
 const listaAlumnos = [
     {
         nombre: 'G. Gaffoglio',
-        foto: userDefault
+        foto: giuFoto
     },
     {
         nombre: 'C. Irribarren',
-        foto: userDefault
+        foto: ceciFoto
     },
     {
         nombre: 'G. Quinteros',
@@ -19,7 +22,7 @@ const listaAlumnos = [
     },
     {
         nombre: 'A. Vera',
-        foto: userDefault
+        foto: agusFoto
     }
 ]
 

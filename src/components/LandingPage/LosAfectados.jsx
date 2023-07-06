@@ -11,7 +11,7 @@ const LosAfectados = () => {
           rangos etarios mas afectados por nuestra problematica son de 8 a 12
           años y mayores de 12 años.
         </p>
-        <button className="btn1">Aprendamos jugando</button>
+        <a className="btn1" href='/aprendamosjugando'>Aprendamos jugando</a>
       </div>
       <div className="decoration-section">
         <img src={graficoEdades} alt="grafico edades" />

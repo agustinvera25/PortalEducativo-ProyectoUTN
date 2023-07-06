@@ -37,7 +37,7 @@ const Dispositivos = () => {
             es muy importante que la web se adapte a los dispositivos
           </span>
         </div>
-        <button className="btn1">Aprendamos jugando</button>
+        <a className="btn1" href="/aprendamosjugando">Aprendamos jugando</a>
       </div>
     </section>
   );

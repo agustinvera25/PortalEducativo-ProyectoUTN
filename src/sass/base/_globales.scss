@@ -150,3 +150,9 @@ a {
     color: $principal;
   }
 }
+.btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}

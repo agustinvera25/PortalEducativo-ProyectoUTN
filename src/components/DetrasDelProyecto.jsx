@@ -12,7 +12,7 @@ const DetrasDelProyecto = () => {
                </div>  
             ))}
         </div>
-        <button className="btn1">Sobre nosotros</button>
+        <a className="btn1" href="/sobrenosotros">Sobre nosotros</a>
     </article>
   )
 }

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-info">
         <div className="sobre-laweb">
           <h2 className="navbar-logo">
-            Nombre<span>XD</span>
+            Ciber<span>héroes</span>
           </h2>
           <p>
             Esta web app gratuita tiene como finalidad sugerir estrategias
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className="creadores">
           <h3>Creadores</h3>
-          <a href="/nosotros">Sobre nosotros</a>
+          <a href="/sobrenosotros">Sobre nosotros</a>
         </div>
         <div className="explorar">
           <h3>Explorar</h3>

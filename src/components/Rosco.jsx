@@ -80,7 +80,6 @@ const Rosco = () => {
         contadorRespuestasCorrectas += 1;
       }
     }
-    console.log(contadorRespuestasCorrectas)
     return contadorRespuestasCorrectas;
   };
 
@@ -133,6 +132,7 @@ const Rosco = () => {
             name="respuesta"
             value={inputValue}
             onChange={handleInput}
+            autoFocus
           />
         </div>
         {alertError && (
