@@ -12,6 +12,9 @@ html {
 body {
   background-color: $cuaternario;
   padding-top: 9rem;
+  @include tablet{
+    padding-top: 4rem;
+  }
 }
 
 #root {
