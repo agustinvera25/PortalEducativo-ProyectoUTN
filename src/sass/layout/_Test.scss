@@ -1,21 +1,31 @@
 .test-section{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    @include tablet{
+        padding: 4rem 0;
+    }
     h2{
         font-family: $fuente_principal;
         font-size: 6rem;
         font-weight: 700;
         color: $secundario;
         margin: 0;
+        @include tablet{
+            font-size: 2rem;
+        }
     }
     p{
         font-family: $fuente_secundaria;
         font-size: 1.5rem;
         color: $secundario;
+        @include tablet{
+            font-size: 1.2rem;
+            padding: 2rem;
+        }
     }
     .inicio-test{
         width: 50rem;
@@ -41,6 +51,9 @@
         transition: all 1s ease-in-out;
         &.visible{
             top: 0;
+            @include tablet{
+                top: 10%;
+            }
         }
     }
     .test-preguntas{
@@ -54,9 +67,16 @@
         box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.25);
         transform: scale(0%);
         transition: all 1s ease;
+        @include tablet{
+            width: 90%;
+            padding: 2rem;
+        }
         p{
             width: 60rem;
             text-align: center;
+            @include tablet{
+                width: 100%;
+            }
         }
         &.visible{
             transform: scale(100%);
@@ -66,6 +86,12 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+            button{
+                @include tablet{
+                    width: fit-content;
+                    padding: 2rem;
+                }
+            }
         }
     }
 }
