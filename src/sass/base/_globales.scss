@@ -12,6 +12,9 @@ html {
 body {
   background-color: $cuaternario;
   padding-top: 9rem;
+  @include tablet {
+    padding-top: 4rem;
+  }
 }
 
 #root {
@@ -63,7 +66,7 @@ a {
   }
   &.disabled {
     cursor: no-drop;
-    opacity: .5;
+    opacity: 0.5;
     &:hover {
       background: $principal;
       color: $blanco;
@@ -84,6 +87,10 @@ a {
   font-family: $fuente_secundaria;
   font-weight: 700;
   width: 70rem;
+  @include tablet {
+    font-size: 1.8rem;
+    width: 100%;
+  }
 }
 
 .subtitle {
@@ -91,6 +98,9 @@ a {
   font-family: $fuente_secundaria;
   font-weight: 700;
   font-size: 1.4rem;
+  @include tablet {
+    font-size: 1.2rem;
+  }
 }
 
 .cards-container {
@@ -98,6 +108,9 @@ a {
   align-items: center;
   justify-content: space-evenly;
   gap: 2rem;
+  @include tablet {
+    flex-direction: column;
+  }
   .investigacion-card {
     display: flex;
     flex-direction: column;
@@ -110,11 +123,19 @@ a {
     box-shadow: 0px 10px 40px 0px rgba(18, 18, 18, 0.1);
     border-top: 2.5px solid $principal;
     padding: 2rem;
+    @include tablet{
+      width: 100%;
+      align-items: center;
+    }
     img {
       width: 4rem;
     }
     h4 {
       font-size: 1.6rem;
+      @include tablet{
+        font-size: 1.2rem;
+        text-align: center;
+      }
     }
     p {
       font-family: $fuente_secundaria;
@@ -126,7 +147,7 @@ a {
     }
   }
 }
-.modalTrivia{
+.modalTrivia {
   background-color: $terciario;
   padding: 4rem;
   color: $blanco;
@@ -136,23 +157,41 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  p, h2{
+  @include tablet{
+    width: 90%;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  p,
+  h2 {
     width: 100%;
     margin: 0;
   }
-  p{
+  p {
     font-size: 2rem;
     font-family: $fuente_secundaria;
     text-align: center;
     color: $secundario;
+    @include tablet{
+      font-size: 1.2rem;
+    }
   }
-  .subtitle{
+  .subtitle {
     color: $principal;
   }
 }
-.btn-container{
+.btn-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  @include tablet{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .btn1{
+    @include tablet{
+      width: 100%;
+    }
+  }
 }

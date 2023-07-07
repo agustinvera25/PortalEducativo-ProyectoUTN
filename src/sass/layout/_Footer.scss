@@ -4,6 +4,9 @@
     justify-content: space-between;
     width: 100%;
     padding: 2rem;
+    @include tablet{
+        flex-direction: column;
+    }
     p, a{
         font-family: $fuente_secundaria;
         font-size: 1.2rem;
@@ -12,10 +15,18 @@
         display: grid;
         gap: 2rem;
         width: 40rem;
+        @include tablet{
+            width: 100%;
+        }
     }
     .footer-nav{
         display: flex;
         gap: 2rem;
+        @include tablet{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
         div{
             display: grid;
             height: max-content;
