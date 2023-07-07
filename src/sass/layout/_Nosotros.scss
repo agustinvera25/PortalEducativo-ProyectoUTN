@@ -34,4 +34,25 @@
         }
     }
   }
+  &.proyecto{
+    text-align: center;
+    .text-section{
+        width: 100%;
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .info{
+                width: 50%;
+            }
+            img{
+                width: 35rem;
+            }
+        }
+    }
+    h2{
+        text-align: center;
+        margin: 0;
+    }
+  }
 }

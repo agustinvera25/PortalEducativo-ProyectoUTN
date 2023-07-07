@@ -1,6 +1,7 @@
 import listaAlumnos from "../../assets/listaAlumnos";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
+import SobreProyecto from "./SobreProyecto";
 
 const SobreNosotros = () => {
   return (
@@ -33,6 +34,7 @@ const SobreNosotros = () => {
           ))}
         </div>
       </section>
+      <SobreProyecto/>
       <Footer />
     </>
   );
