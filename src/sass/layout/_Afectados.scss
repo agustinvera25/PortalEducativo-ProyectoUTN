@@ -1,5 +1,8 @@
 .afectados-section {
   align-items: center;
+  @include tablet{
+    width: 100%;
+  }
   .text-section {
     height: fit-content;
     .title {
@@ -9,6 +12,9 @@
     .title,
     p {
       width: 50rem;
+      @include tablet{
+        width: 100%;
+      }
     }
   }
   .decoration-section {
@@ -23,6 +29,11 @@
       height: 45rem;
       margin-right: 4rem;
       border-radius: 2rem;
+      @include tablet{
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+      }
     }
   }
 }
