@@ -9,6 +9,7 @@ import JuegosPage from "./pages/JuegosPage.jsx";
 import CiberacosoRosco from "./components/JuegosPage/CiberacosoRosco.jsx";
 import CiberacosoTrivia from "./components/JuegosPage/CiberacosoTrivia.jsx";
 import Proximamente from "./components/Proximamente.jsx";
+import SobreNosotros from "./components/Nosotros/SobreNosotros.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/sobrenosotros",
-    element: <Proximamente />,
+    element: <SobreNosotros />,
   },
   {
     path: "/juegos",
