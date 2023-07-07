@@ -10,7 +10,7 @@ const Dispositivos = () => {
       <div className="text-section">
         <span className="subtitle">Dispositivos de conexión habituales</span>
         <h2 className="title">
-          ¿Que dispositivos suelen ser los habitales para acceder a internet?
+          ¿Que dispositivos suelen ser los habituales para acceder a internet?
         </h2>
         <p>
           Nuestra encuesta nos dio como resultado que los dispositivos mas

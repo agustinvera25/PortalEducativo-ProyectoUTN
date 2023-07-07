@@ -1,0 +1,88 @@
+.nostros-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 4rem;
+  @include tablet{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .text-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include tablet{
+        width: 100%;
+    }
+    h2 {
+      width: 100%;
+      text-align: start;
+      margin: 0;
+      margin-bottom: 1rem;
+      font-family: $fuente_principal;
+      font-size: 5rem;
+      @include tablet{
+        font-size: 4rem;
+        margin: 0;
+      }
+    }
+    p {
+      font-family: $fuente_secundaria;
+      font-size: 1.3rem;
+      margin: 0;
+        @include tablet{
+            font-size: 1.1rem;
+        }
+    }
+  }
+  .contenedor-alumnos {
+    height: 100%;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    @include telefono{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .alumno{
+        img{
+            width: 8rem;
+            height: 8rem;
+            @include tablet{
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+    }
+  }
+  &.proyecto{
+    text-align: center;
+    .text-section{
+        width: 100%;
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            @include tablet{
+                flex-direction: column-reverse;
+            }
+            .info{
+                width: 50%;
+                @include tablet{
+                    width: 100%;
+                }
+            }
+            img{
+                width: 35rem;
+                @include tablet{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    h2{
+        text-align: center;
+        margin: 0;
+    }
+  }
+}
